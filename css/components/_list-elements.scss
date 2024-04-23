@@ -1,0 +1,123 @@
+.list-elements {
+  &--outsourcing {
+    padding: 113px 40px 145px;
+
+    @media (max-width: $tablet) {
+      padding-bottom: 225px;
+    }
+
+    .elements-container {
+      max-width: 1163px;
+      margin: auto;
+    }
+
+    .card-heading {
+      @media (max-width: $tablet) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .images-container {
+    position: relative;
+
+    .circular {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      right: 0;
+      transform: translateX(30px) translateY(10px);
+    }
+
+    .circle {
+      position: absolute;
+      width: 76px;
+      height: 76px;
+      left: 0;
+      transform: translateX(-65px) translateY(96px);
+    }
+  }
+
+  .section-title--small {
+    text-align: center;
+  }
+
+  .text-container {
+    max-width: 570px;
+  }
+
+  .elements-container {
+    margin-top: 161px;
+  }
+
+  .list-element {
+    display: flex;
+    justify-content: space-between;
+    min-height: 314px;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      align-items: center;
+
+      &:nth-of-type(even) {
+        flex-direction: column-reverse;
+      }
+    }
+
+    &:not(:first-of-type) {
+      margin-top: 80px;
+
+      @media (max-width: $tablet) {
+        margin-top: 150px;
+      }
+    }
+
+    .paragraph--small {
+      margin-top: 30px;
+    }
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  &--our-wave {
+    padding: 150px 20px 64px;
+
+    h3 + .paragraph--medium {
+      margin-top: 33px;
+      text-align: center;
+      max-width: 695px;
+      margin-inline: auto;
+    }
+
+    .elements-container {
+      margin-top: 7px;
+    }
+
+    .paragraph--medium + .section-title {
+      text-align: center;
+      margin-top: 57px;
+    }
+
+    .list-element {
+      justify-content: center;
+      text-align: center;
+
+      &:not(:first-of-type) {
+        margin-top: 0;
+      }
+
+      .number {
+        height: 191px;
+        width: 31px;
+        display: block;
+        margin: 15px auto 0;
+
+        & + .card-heading {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

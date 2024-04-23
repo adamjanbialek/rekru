@@ -1,0 +1,353 @@
+.image-with-background {
+  height: 468px;
+  width: 582px;
+  position: relative;
+
+  .main-image {
+    position: relative;
+    z-index: 1;
+    display: block;
+    //height: 381px;
+    //width: 471px;
+    //margin-inline: 72px 39px;
+  }
+
+  .gradient-box {
+    position: absolute;
+    left: 0;
+    bottom: 42px;
+    background: linear-gradient(185.78deg, #61DCDF 0.38%, #886CFF 100%);
+    width: 425px;
+    height: 236px;
+    border-radius: 5px 0 0 0;
+  }
+
+  .optional-image {
+    position: absolute;
+    z-index: 2;
+    height: 260px;
+    width: 300px;
+    bottom: 0;
+    right: 0;
+  }
+
+  &--main {
+    height: 670px;
+    width: 575px;
+
+    @media (max-width: $small-tablet) {
+      height: 335px;
+      width: 287px;
+    }
+
+    .main-image {
+      width: 554px;
+      height: 650px;
+      left: 20px;
+      top: 0;
+
+      @media (max-width: $small-tablet) {
+        height: 325px;
+        width: 277px;
+      }
+    }
+
+    .gradient-box {
+      left: 0;
+      bottom: 0;
+      width: 554px;
+      height: 650px;
+
+      @media (max-width: $small-tablet) {
+        height: 325px;
+        width: 277px;
+      }
+    }
+  }
+
+  &--ride-wave {
+    height: 424px;
+    width: 572px;
+
+    @media (max-width: $small-tablet) {
+      height: 212px;
+      width: 286px;
+    }
+
+    .main-image {
+      width: 471px;
+      height: 381px;
+      padding-inline: 72px 29px;
+
+      @media (max-width: $small-tablet) {
+        height: 190px;
+        width: 235px;
+        padding-inline: 36px 15px;
+      }
+    }
+
+    .optional-image {
+      transform: translateY(42px);
+      height: 260px;
+      width: 300px;
+
+      @media (max-width: $small-tablet) {
+        width: 213px;
+        height: 118px;
+      }
+    }
+
+    .gradient-box {
+      bottom: 0;
+
+      @media (max-width: $small-tablet) {
+        width: 213px;
+        height: 118px;
+      }
+    }
+  }
+
+  &--tech-stack {
+    height: 534px;
+    width: 559px;
+
+    @media (max-width: $small-tablet) {
+      width: 279px;
+      height: 267px;
+    }
+
+    .gradient-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 159px;
+      width: 145px;
+      z-index: 4;
+      bottom: 0;
+      border-radius: 13px;
+      background: $light-grey;
+
+      @media (max-width: $small-tablet) {
+        height: 80px;
+        width: 72px;
+      }
+
+      .paragraph--medium {
+        font-size: 20px;
+        text-align: center;
+        font-family: Jost, sans-serif;
+
+        @media (max-width: $small-tablet) {
+          font-size: 12px;
+          line-height: 1.5em;
+        }
+      }
+    }
+
+    .main-image {
+      width: 482px;
+      height: 465px;
+      padding-left: 77px;
+      right: 25px;
+      z-index: 3;
+
+      @media (max-width: $small-tablet) {
+        width: 241px;
+        height: 232px;
+        padding-left: 38px;
+      }
+
+      img {
+        border-radius: 10px;
+      }
+    }
+
+    .optional-image {
+      width: 162px;
+      height: 151px;
+      bottom: 16px;
+
+      @media (max-width: $small-tablet) {
+        width: 81px;
+        height: 75px;
+      }
+    }
+
+    .rectangle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 583px;
+      width: 583px;
+      transform: translateX(-58px) translateY(-65px);
+
+      @media (max-width: $small-tablet) {
+        width: 291px;
+        height: 291px;
+        transform: translateX(-29px) translateY(-32px);
+      }
+    }
+  }
+
+  &--why-outsource {
+    height: 648px;
+    width: 686px;
+
+    @media (max-width: $small-tablet) {
+      height: 290px;
+      width: 310px;
+    }
+
+    .main-image {
+      width: 574px;
+      height: 530px;
+      left: 16px;
+      top: 24px;
+      z-index: 2;
+      padding-right: 112px;
+
+      @media (max-width: $small-tablet) {
+        width: 259px;
+        height: 240px;
+        top: 12px;
+        left: 8px;
+        padding-right: 50px;
+      }
+
+      img {
+        border-radius: 5px;
+      }
+    }
+
+    .gradient-box {
+      top: 0;
+      left: 0;
+      height: 554px;
+      width: 590px;
+      background: $image-gradient;
+
+      @media (max-width: $small-tablet) {
+        height: 250px;
+        width: 266px;
+      }
+    }
+
+    .optional-image {
+      width: 266px;
+      height: 409px;
+      z-index: 1;
+
+      @media (max-width: $small-tablet) {
+        width: 120px;
+        height: 184px;
+      }
+    }
+  }
+
+  &--our-clients {
+    max-width: 597px;
+    width: 100%;
+    height: 545px;
+
+    @media (max-width: $small-tablet) {
+      max-width: 298px;
+      height: 272px;
+    }
+
+    .main-image {
+      right: 24px;
+      bottom: 14px;
+      z-index: 3;
+      width: 574px;
+      height: 530px;
+      overflow: hidden;
+      border-radius: 5px;
+      left: 0;
+      top: 0;
+
+      @media (max-width: $small-tablet) {
+        right: 12px;
+        bottom: 7px;
+        width: 287px;
+        height: 265px;
+      }
+
+      img {
+        transform: scale(1.005);
+      }
+    }
+
+    .optional-image {
+      top: 0;
+      left: 0;
+      width: 266px;
+      height: 409px;
+      transform: translateX(-64px) translateY(-164px);
+
+      @media (max-width: $small-tablet) {
+        max-width: 133px;
+        height: 204px;
+        transform: translateX(-32px) translateY(-82px);
+      }
+    }
+
+    .gradient-box {
+      background: $image-gradient;
+      width: 100%;
+      height: 100%;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  &--know-us-better {
+    height: 623px;
+    width: 539px;
+
+
+    @media (max-width: $small-tablet) {
+      height: 311px;
+      width: 269px;
+    }
+
+    .gradient-box {
+      right: 0;
+      bottom: 0;
+      left: unset;
+      width: 178px;
+      height: 211px;
+
+      @media (max-width: $small-tablet) {
+        width: 139px;
+        height: 105px;
+      }
+    }
+
+    .main-image {
+      width: 420px;
+      height: 526px;
+      top: 58px;
+      left: 74px;
+      z-index: 3;
+      @media (max-width: $small-tablet) {
+        width: 210px;
+        height: 263px;
+        top: 29px;
+        left: 37px;
+      }
+    }
+
+    .optional-image {
+      left: 0;
+      top: 0;
+      width: 242px;
+      height: 210px;
+
+      @media (max-width: $small-tablet) {
+        width: 121px;
+        height: 105px;
+      }
+    }
+  }
+}

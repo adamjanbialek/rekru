@@ -1,0 +1,9 @@
+{
+  "files": ["css/*.css", "index.html","js/script.js"],
+  "watchEvents": ["change"],
+  "server": {
+    "baseDir": ["./", "./css"],
+    "index": "index.html"
+  },
+  "open": true
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Zadanie rekrutacyjne - Adam Bialek</title>
+</head>
+<body>
+<main>
+    <section class="hero hero--contact">
+        <div class="content-container">
+            <h1 class="section-title">
+                <div class="outsourcing-partial-title" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="200">Contact</div>
+            </h1>
+            <picture data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                <img src="assets/hero-contact/background.png">
+            </picture>
+        </div>
+    </section>
+    <section class="cards-container cards-container--in-touch">
+        <h2 class="section-title section-title--medium colorful-title" data-aos="fade-down">Questions?</h2>
+        <h2 class="section-title section-title--medium" data-aos="fade-down" data-aos-delay="200">Keep in Touch with Us</h2>
+        <p class="paragraph paragraph--large"  data-aos="fade-down" data-aos-delay="400">If you have any questions, call us or write an e-mail and our advisers will contact you.</p>
+        <div class="cards">
+            <div class="card card--box-shadow">
+                <picture>
+                    <img src="assets/in-touch/pin.svg">
+                </picture>
+                <h4 class="card-heading">Our Studio</h4>
+                <p class="paragraph paragraph--small">Adres</p>
+            </div>
+            <div class="card card--box-shadow">
+                <picture>
+                    <img src="assets/in-touch/phone.svg">
+                </picture>
+                <h4 class="card-heading">Contact Us</h4>
+                <p class="paragraph paragraph--small">Telefon</p>
+            </div>
+            <div class="card card--box-shadow">
+                <picture>
+                    <img src="assets/in-touch/clock.svg">
+                </picture>
+                <h4 class="card-heading">When We Active</h4>
+                <p class="paragraph paragraph--small">Godziny otwarcia</p>
+            </div>
+        </div>
+    </section>
+    <section class="form-section">
+        <picture data-aos="zoom-out" data-aos-duration="800">
+            <img src="assets/forms/map.jpg">
+        </picture>
+        <div class="form-container">
+            <h2 class="section-title section-title--medium">Contact us today</h2>
+            <div class="form-subcontainer">
+                <input type="text" placeholder="Enter your Name" class="form-input" required>
+                <input type="email" placeholder="Enter Your Mail" class="form-input" required>
+                <input type="text" placeholder="Enter Your Topic" class="form-input" required>
+                <input type="text" placeholder="Enter Your Massage" class="form-input" required>
+                <button class="button button--contact">Send Massage</button>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/script.js"></script>
+<script>
+    AOS.init({
+        startEvent: 'DOMContentLoaded',
+        duration: 800,
+        once: true,
+    });
+
+</script>
+</body>
+</html>

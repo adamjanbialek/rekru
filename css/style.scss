@@ -1,0 +1,30 @@
+@import "./globals/_reset-styles.scss";
+@import "./abstract/_variables.scss";
+@import "./globals/_fonts.scss";
+@import "./globals/_typography.scss";
+@import "./components/_buttons.scss";
+@import "./components/_cards.scss";
+@import "./components/_forms.scss";
+@import "./components/_hero.scss";
+@import "./components/_image-with-background.scss";
+@import "./components/_list-elements.scss";
+@import "./components/_services.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  overflow: hidden;
+}
+
+picture {
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.outsourcing-background {
+  background: $light-brown;
+}

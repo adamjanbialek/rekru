@@ -1,0 +1,62 @@
+.button {
+  padding: 18px 32px;
+  border-radius: 5px;
+  border: none;
+  color: $white;
+  font-family: Outfit, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.3px;
+  transition: .25s ease-in all;
+
+  &:hover {
+    cursor: pointer;
+    background: $dark-grey;
+    color: $white;
+  }
+
+
+  &--primary {
+    background: rgba(136, 108, 255, 1);
+  }
+
+  &--hero {
+    background: rgba(135, 112, 255, 1);
+  }
+
+  &--contact {
+    background-image: $image-gradient-reverse;
+
+    &:hover {
+      background: transparent;
+      color: $dark-grey;
+      outline: $dark-grey 1px solid;
+    }
+  }
+
+  &--transparent {
+    background: none;
+    outline: $dark-grey 1px solid;
+    color: $dark-grey;
+
+    //&:hover {
+    //  background: $dark-grey;
+    //  color: $white;
+    //}
+  }
+
+  &--swiper {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: $violet-alternate;
+    display: flex;
+    justify-content: space-between;
+
+    .swiper-button-prev, .swiper-button-next {
+      position: relative;
+      color: $white;
+    }
+  }
+}
